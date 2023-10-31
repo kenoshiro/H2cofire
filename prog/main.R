@@ -28,4 +28,5 @@ df$all <- read_csv('data/scenario_data.csv') %>%
 
 source('prog/func_calc.R')
 source('prog/calc_var.R')
+source('prog/load_AR6.R')
 source('prog/plot.R',echo=T)
