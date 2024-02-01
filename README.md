@@ -9,5 +9,9 @@
 - To run this script, scenario data file `scenario_data.csv` needs to be downloaded and copied to `./data/`. The instruction for the data file download can be found in the Data Availability statement in the paper.
 - The IPCC AR6 scenario data also needs to be downloaded from [here](https://data.ene.iiasa.ac.at/ar6/) and copied to `./data/AR6/`.
 - Execute `./prog/main.R` on the command line or main console on RStudio. The figures are generated in `./output/`.
-- Following R packages are required: tidyverse, cowplot.
-- This program can be executed on Linux OS.
+- Required R packages: tidyverse (specifically,dplyr,tidyr,readr,stringr,magrittr,ggplot2,readxl), cowplot.
+- This program was tested on the following environment.
+  - OS: Ubuntu 22.04
+  - R: 4.2.3
+  - R packages
+    - dplyr: 1.1.4, tidyr: 1.3.0, readr: 2.1.4, stringr: 1.5.1, magrittr: 2.0.3, ggplot2: 3.4.4, readxl: 1.4.3, cowplot: 1.1.2
