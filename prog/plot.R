@@ -132,7 +132,7 @@ p$tmp1 <- df$all %>% filter(Region=='World',Year>=2020) %>%
     geom_path(aes(x=Year,y=Value,color=scen_cpol,group=interaction(scen_cpol,scen_techpol)),linewidth=.3,show.legend=T)+
     geom_point(aes(x=Year,y=Value,color=scen_cpol,shape=scen_techpol),fill='white',show.legend=T)+
     scale_y_continuous(limits=c(0,NA))+
-    coord_cartesian(ylim=c(0,65))+
+    coord_cartesian(ylim=c(0,155))+
     labs(x=NULL,y=expression(paste('Power generation (EJ ',{yr}^{`-1`},')')))+
     mytheme$set1+
     theme(legend.position='right',strip.background=element_blank(),legend.margin=margin(0,0,0,0),
@@ -148,9 +148,9 @@ p$tmp2 <- df$load_AR6_global %>%
     ggplot()+
     geom_crossbar(aes(x=Category,ymin=p10,ymax=p90,y=p50),width=.75,color='white',fill='grey')+
     geom_crossbar(aes(x=Category,ymin=p0,ymax=p100,y=p0),width=.75,color='grey',fill='transparent',fatten=0)+
-    geom_text(aes(x=Category,label=str_c('n=',n),y=60),size=2,angle=90,hjust=.5,vjust=.5)+
+    geom_text(aes(x=Category,label=str_c('n=',n),y=p100),size=2,angle=90,hjust=1.2,vjust=.5)+
     scale_y_continuous(limits=c(0,NA))+
-    coord_cartesian(ylim=c(0,65))+
+    coord_cartesian(ylim=c(0,155))+
     labs(x=NULL,y=NULL)+
     mytheme$set1+
     theme(axis.text.x=element_text(angle=90,hjust=1,vjust=.5),

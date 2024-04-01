@@ -3,6 +3,8 @@
 ## Introduction
 
 - This repository includes source code for data analysis and figure production for the hydrogen co-firing analysis by AIM/Technology.
+- Details on the analysis can be found in the following manuscript:  
+Oshiro, K., Fujimori, S. (2024). Limited impact of hydrogen co-firing on prolonging fossil-based power generation under low emissions scenarios. *Nature Communications*, 15(1), 1778. https://doi.org/10.1038/s41467-024-46101-5
 
 ## How to use
 
